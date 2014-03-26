@@ -21,6 +21,10 @@
 		C5E2395518E2C42E00A48EC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E2393718E2C42E00A48EC6 /* UIKit.framework */; };
 		C5E2395D18E2C42E00A48EC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5E2395B18E2C42E00A48EC6 /* InfoPlist.strings */; };
 		C5E2395F18E2C42E00A48EC6 /* SectionPathScrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2395E18E2C42E00A48EC6 /* SectionPathScrollTests.m */; };
+		C5E2396A18E2C76500A48EC6 /* HorizontalSectionPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2396918E2C76500A48EC6 /* HorizontalSectionPathView.m */; };
+		C5E2396C18E2C7BC00A48EC6 /* HorizontalSectionPathView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5E2396B18E2C7BC00A48EC6 /* HorizontalSectionPathView.xib */; };
+		C5E2396F18E2CA0300A48EC6 /* FunkyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2396E18E2CA0300A48EC6 /* FunkyViewController.m */; };
+		C5E239B318E2E41700A48EC6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E239B218E2E41700A48EC6 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		C5E2395A18E2C42E00A48EC6 /* SectionPathScrollTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SectionPathScrollTests-Info.plist"; sourceTree = "<group>"; };
 		C5E2395C18E2C42E00A48EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C5E2395E18E2C42E00A48EC6 /* SectionPathScrollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionPathScrollTests.m; sourceTree = "<group>"; };
+		C5E2396818E2C76500A48EC6 /* HorizontalSectionPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalSectionPathView.h; sourceTree = "<group>"; };
+		C5E2396918E2C76500A48EC6 /* HorizontalSectionPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalSectionPathView.m; sourceTree = "<group>"; };
+		C5E2396B18E2C7BC00A48EC6 /* HorizontalSectionPathView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalSectionPathView.xib; sourceTree = "<group>"; };
+		C5E2396D18E2CA0300A48EC6 /* FunkyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunkyViewController.h; sourceTree = "<group>"; };
+		C5E2396E18E2CA0300A48EC6 /* FunkyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunkyViewController.m; sourceTree = "<group>"; };
+		C5E239B118E2E41700A48EC6 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C5E239B218E2E41700A48EC6 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +130,13 @@
 				C5E2394918E2C42E00A48EC6 /* ViewController.m */,
 				C5E2394B18E2C42E00A48EC6 /* Images.xcassets */,
 				C5E2393A18E2C42E00A48EC6 /* Supporting Files */,
+				C5E2396818E2C76500A48EC6 /* HorizontalSectionPathView.h */,
+				C5E2396918E2C76500A48EC6 /* HorizontalSectionPathView.m */,
+				C5E2396B18E2C7BC00A48EC6 /* HorizontalSectionPathView.xib */,
+				C5E2396D18E2CA0300A48EC6 /* FunkyViewController.h */,
+				C5E2396E18E2CA0300A48EC6 /* FunkyViewController.m */,
+				C5E239B118E2E41700A48EC6 /* TableViewController.h */,
+				C5E239B218E2E41700A48EC6 /* TableViewController.m */,
 			);
 			path = SectionPathScroll;
 			sourceTree = "<group>";
@@ -229,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5E2394C18E2C42E00A48EC6 /* Images.xcassets in Resources */,
+				C5E2396C18E2C7BC00A48EC6 /* HorizontalSectionPathView.xib in Resources */,
 				C5E2393E18E2C42E00A48EC6 /* InfoPlist.strings in Resources */,
 				C5E2394718E2C42E00A48EC6 /* Main.storyboard in Resources */,
 			);
@@ -250,6 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5E2394A18E2C42E00A48EC6 /* ViewController.m in Sources */,
+				C5E239B318E2E41700A48EC6 /* TableViewController.m in Sources */,
+				C5E2396A18E2C76500A48EC6 /* HorizontalSectionPathView.m in Sources */,
+				C5E2396F18E2CA0300A48EC6 /* FunkyViewController.m in Sources */,
 				C5E2394418E2C42E00A48EC6 /* AppDelegate.m in Sources */,
 				C5E2394018E2C42E00A48EC6 /* main.m in Sources */,
 			);
