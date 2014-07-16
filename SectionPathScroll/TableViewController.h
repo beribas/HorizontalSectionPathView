@@ -8,15 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol HorizontalSectionPathViewDelegate;
+#import "HorizontalSectionPathView.h"
 
-@protocol TableViewControllerDelegate <NSObject>
-
-@optional
-- (void) tableViewWillDisplaySectionAtIndex: (int)sectionIndex;
-- (void) tableViewWillDisplaySectionWithTitle: (NSString*) title;
-
-@end
 
 @interface TableViewController : UITableViewController <HorizontalSectionPathViewDelegate>
 @property (nonatomic, strong) NSArray *sectionTitles;

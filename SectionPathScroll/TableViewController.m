@@ -7,7 +7,6 @@
 //
 
 #import "TableViewController.h"
-#import "HorizontalSectionPathView.h"
 
 @interface TableViewController ()
 @property BOOL userManuallyDragging;
@@ -33,7 +32,7 @@
     return self.sectionTitles[section];
 }
 
-- (void)sectionPathViewSelectedSectionAtIndex:(int)sectionIndex {
+- (void)sectionPathViewSelectedSectionAtIndex:(NSInteger)sectionIndex {
     NSIndexPath *firstRowInSelectedSection = [NSIndexPath indexPathForRow:0 inSection:sectionIndex];
     [self.tableView scrollToRowAtIndexPath:firstRowInSelectedSection atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
@@ -45,7 +44,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%d,%d", indexPath.section, indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld,%ld", (long)indexPath.section, (long)indexPath.row];
     
     return cell;
 }

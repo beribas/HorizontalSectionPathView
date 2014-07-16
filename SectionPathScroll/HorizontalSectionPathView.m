@@ -7,7 +7,6 @@
 //
 
 #import "HorizontalSectionPathView.h"
-#import "TableViewController.h"
 
 #define buttonTagOffset 10
 
@@ -18,15 +17,20 @@
 @property (strong, nonatomic) NSTimer *contentOffsetResetTimer;
 @property (strong, nonatomic) NSArray *titles;
 
+@property (strong, nonatomic) UIScrollView *scrollView;
+
 @end
 
 @implementation HorizontalSectionPathView 
 
 -(void)awakeFromNib
 {
-    [self addSubview:[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.class) owner:self options:nil][0]];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame))];
     self.scrollView.delegate = self;
     self.scrollView.scrollEnabled = YES;
+    self.scrollView.bounces = NO;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    [self addSubview:self.scrollView];
 }
 
 - (void)setupWithTitles:(NSArray *)titles {
@@ -109,7 +113,7 @@
     [self updateContentOffsetForSelectedButton:self.currentlySelectedButton];
 }
 
-- (void)tableViewWillDisplaySectionAtIndex:(int)sectionIndex {
+- (void)tableViewWillDisplaySectionAtIndex:(NSInteger)sectionIndex {
     UIButton *button = (UIButton*) [self.contentView viewWithTag:sectionIndex + buttonTagOffset];
     [self markButtonSelected:button];
     [self updateContentOffsetForSelectedButton:button];

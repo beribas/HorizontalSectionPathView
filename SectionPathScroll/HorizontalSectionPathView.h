@@ -7,19 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol TableViewControllerDelegate;
 
-@protocol HorizontalSectionPathViewDelegate <NSObject>
-
-@optional
-- (void) sectionPathViewSelectedSectionAtIndex: (int) sectionIndex;
-- (void) sectionPathViewSelectedSectionWithTitle: (NSString*) title;
-
-@end
+#import "TableViewControllerDelegate.h"
+#import "HorizontalSectionPathViewDelegate.h"
 
 @interface HorizontalSectionPathView : UIView <UIScrollViewDelegate, TableViewControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) id<HorizontalSectionPathViewDelegate> delegate;
 
 - (void) setupWithTitles: (NSArray*) titles;
